@@ -87,12 +87,10 @@ export default function JejuMorningsLandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">
-              For Your Performance, and Your Peace of Mind.
+              Anxiety and Focus, All at Once.
             </h1>
             <p className="mt-4 text-lg text-gray-700">
-              In a world of constant noise and pressure, find the clarity to
-              achieve your goals and the calm to protect your well-being. This
-              is your daily tool for a balanced, optimal mind.
+              This is the paradox of the modern achiever. Our K-wellness formula helps you find harmony—transforming the energy of anxiety into the power of calm, clear focus.
             </p>
             <a
               href="#shop"
@@ -307,7 +305,7 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* --- [NEW] SHOP / FINAL CTA SECTION --- */}
+      {/* --- SHOP / FINAL CTA SECTION --- */}
       <section id="shop" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <img
