@@ -1,8 +1,10 @@
 import React from "react";
 
-export default function App() {
-  // 후기 데이터를 밀레니얼(4개)과 Z세대(6개)에 맞춰 총 10개로 확장하고,
-  // Z세대 후기가 먼저 보이도록 순서를 조정했으며, 도시 이름을 더 현실감 있게 수정했습니다.
+// 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
+// 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
+// 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
+
+export default function JejuMorningsLandingPage() {
   const testimonials = [
     // --- Gen Z Explorers (6) ---
     {
@@ -24,7 +26,7 @@ export default function App() {
       fullText:
         "The pressure in design school is insane, and the creative self-doubt can be paralyzing. This helps take the edge off that inner critic so I can actually create.",
       name: "Leo G.",
-      title: "Graphic Design Student, Savannah, GA", 
+      title: "Graphic Design Student, Savannah, GA",
     },
     {
       quote: "My Go-To for Side Hustle Burnout",
@@ -38,7 +40,7 @@ export default function App() {
       fullText:
         "I'm super conscious about what I put in my body. Love that this is clean, vegan, and based on Korean wisdom. It feels authentic and actually works. Plus, the packaging is super aesthetic.",
       name: "Jamie T.",
-      title: "Wellness Vlogger, Scottsdale, AZ", 
+      title: "Wellness Vlogger, Scottsdale, AZ",
     },
     {
       quote: "Makes 'Adulting' Less Overwhelming",
@@ -67,11 +69,11 @@ export default function App() {
       fullText:
         "Working in finance means relentless pressure. I can now handle market volatility with a steady mind, and I'm no longer mentally exhausted by the end of the day.",
       name: "Sarah K.",
-      title: "Investment Banker, Boston, MA", 
+      title: "Investment Banker, Boston, MA",
     },
     {
       quote: "More Patience at Work and Home",
-      fullText: 
+      fullText:
         "Juggling a director role and family life left me constantly frazzled. This helps me feel more present and patient, both in important meetings and with my kids at home.",
       name: "Jessica M.",
       title: "Marketing Director & Mom, Minneapolis, MN",
@@ -220,6 +222,22 @@ export default function App() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      
+      {/* --- NEW JEJU ISLAND SOUL SECTION --- */}
+      <section className="relative py-24 bg-gray-800 text-white">
+        <div
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{ backgroundImage: "url('https://placehold.co/1920x1080/2d3748/e2e8f0?text=Jeju+Landscape')", opacity: 0.2 }}
+        ></div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-6">
+            Sourced from an Island of Healing Energy
+          </h2>
+          <p className="text-lg text-gray-200 leading-relaxed">
+            We journeyed to Korea’s pristine Jeju Island, a protected UNESCO World Heritage site, to find the soul of our formula. It's a place where ancient volcanoes have gifted the soil with rare minerals, and where resilient botanicals absorb the pure, healing energy of the land. We’ve bottled this essence to bring a piece of Jeju’s restorative calm directly to you.
+          </p>
         </div>
       </section>
 
