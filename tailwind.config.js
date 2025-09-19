@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lora', 'sans-serif'], // 이 부분을 추가/수정합니다.
+        sans: ['Lora', 'sans-serif'], // 기본 폰트를 'Lora'로 설정합니다.
       },
     },
   },
