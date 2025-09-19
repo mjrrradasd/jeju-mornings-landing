@@ -27,7 +27,7 @@ export default function JejuMorningsLandingPage() {
           <div>
             {/* 대표님의 새로운 구미 목업 이미지 경로로 변경하세요. */}
             <img
-              src="https://storage.googleapis.com/gemini-prod/images/b48a032d-3c22-482f-8703-a4c3dfcf732f" 
+              src="https://storage.googleapis.com/gemini-prod/images/b48a032d-3c22-482f-8703-a4c3dfcf732f"
               alt="Jeju Mornings Calm Focus Gummies"
               className="rounded-2xl shadow-2xl"
             />
@@ -35,29 +35,40 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* Difference Section - COMPLETELY REVISED */}
-      <section className="py-20">
+      {/* --- NEW INTRODUCTION SECTION --- */}
+      <section className="py-20 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">Does This Sound Familiar?</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Your mind feels like it has too many tabs open. You're constantly busy, jumping from one task to another, but at the end of the day, you feel like you haven't truly accomplished anything meaningful. You're fueled by coffee, but tired of the jitters and the inevitable afternoon crash. You're not looking for another stimulant; you're looking for a way to quiet the static and find your focus again.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Difference Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Makes Jeju Mornings Different?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Point 1: Body State over Brain Issue */}
-            <div className="text-center p-6 bg-gray-50 rounded-xl">
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">⚖️</div>
               <h3 className="font-semibold text-lg text-gray-900">A Systemic Approach</h3>
               <p className="mt-2 text-gray-600">
                 K-wellness teaches that anxiety isn't just a brain issue, but a signal from your entire body's system. We don't offer a temporary fix; we help your body find its long-term balance.
               </p>
             </div>
-            {/* Point 2: Optimized for Women */}
-            <div className="text-center p-6 bg-gray-50 rounded-xl">
+            {/* Point 2: Optimized for Women - UPDATED */}
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">👩‍🔬</div>
-              <h3 className="font-semibold text-lg text-gray-900">Designed for Women</h3>
+              <h3 className="font-semibold text-lg text-gray-900">A Formula Designed for Women</h3>
               <p className="mt-2 text-gray-600">
-                Created by a chemist and Korean Medicine Doctor, our formula is optimized to support the unique hormonal and systemic needs of the modern woman's demanding lifestyle.
+                Created by a chemist and Korean Medicine Doctor, our formula is optimized to support the unique systemic and hormonal needs of the modern woman's demanding lifestyle.
               </p>
             </div>
             {/* Point 3: Jeju Green Tangerine */}
-            <div className="text-center p-6 bg-gray-50 rounded-xl">
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">🍊🌿</div>
               <h3 className="font-semibold text-lg text-gray-900">The Jeju Island Secret</h3>
               <p className="mt-2 text-gray-600">
@@ -65,11 +76,11 @@ export default function JejuMorningsLandingPage() {
               </p>
             </div>
             {/* Point 4: Delicious Gummy Format */}
-            <div className="text-center p-6 bg-gray-50 rounded-xl">
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">🍬</div>
               <h3 className="font-semibold text-lg text-gray-900">A Joyful Daily Ritual</h3>
               <p className="mt-2 text-gray-600">
-                No more swallowing pills. Our delicious gummies make your daily wellness routine an effortless and enjoyable moment of self-care you'll actually look forward to.
+                No more swallowing pills. Our delicious gummies make your daily wellness routine an effortless and enjoyable moment of self-care.
               </p>
             </div>
           </div>
@@ -81,13 +92,13 @@ export default function JejuMorningsLandingPage() {
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <img
             src="https://placehold.co/500x500/e2e8f0/334155?text=Founder's\nPhoto" // 대표님 프로필 사진 경로로 변경하세요.
-            alt="Founder Dr. Daehyun Rho"
+            alt="Founder Dr. Dae-hyeon Rho"
             className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
           />
           <div>
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Science Meets Wisdom.</h2>
             <p className="text-gray-700 mb-4">
-              Our founder, Dr. Daehyun Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
+              Our founder, Dr. Dae-hyeon Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
             </p>
             <blockquote className="border-l-4 border-green-700 pl-4 italic text-gray-800 bg-white p-4 rounded-r-lg">
               "We're offering a 100% Money-Back Guarantee. If Jeju Mornings doesn't become an essential part of your wellness ritual, we will refund your entire purchase. Your trust is everything."
@@ -116,7 +127,7 @@ export default function JejuMorningsLandingPage() {
               <p className="font-semibold text-gray-900">"Actually Helps with My Anxiety"</p>
               <p className="text-gray-700 mt-4">"Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird, just... quieter inside. It's easier to focus on my notes instead of my anxious thoughts."</p>
               <p className="text-sm text-gray-600 mt-4">
-                - Chloe S., University Student, NYC
+                - Chloe S., University Student, Druham, NC
               </p>
             </div>
             <div className="border rounded-xl p-6 shadow-sm bg-white">
