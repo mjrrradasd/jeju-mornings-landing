@@ -1,156 +1,133 @@
-import React from 'react'
+import React from "react";
 
-export default function App() {
+// 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
+// 대표님께서 보여주신 GitHub 폴더 구조의 src 폴더 내 메인 파일(예: App.jsx)에
+// 이 코드 전체를 붙여넣기 하시면 됩니다.
+
+export default function JejuMorningsLandingPage() {
   return (
-    <div className="text-jeju-dark bg-white">
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div className="font-sans text-gray-800 bg-white">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
-              You Weren't Made to Just 'Get Through' the Day.
+            <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">
+              For Your Performance, and Your Peace of Mind.
             </h1>
-            <p className="mt-5 text-lg text-gray-700 max-w-xl">
-              Your ambition deserves a smarter fuel. This is your daily tool to find calm, clear focus and unlock your Flow State.
+            <p className="mt-4 text-lg text-gray-700">
+              In a world of constant noise and pressure, find the clarity to achieve your goals and the calm to protect your well-being. This is your daily tool for a balanced, optimal mind.
             </p>
-            <a href="#shop" className="mt-8 inline-block bg-jeju-dark text-white px-8 py-3 rounded-xl font-semibold hover:bg-black">
-              SHOP NOW
+            <a
+              href="#shop" // This should link to your Shopify product purchase section
+              className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105"
+            >
+              Discover Your Calm Focus
             </a>
           </div>
-          <div className="relative">
-            <img src="/product-hero.png" alt="Jeju Mornings Gummies" className="rounded-2xl shadow-xl w-full" />
-          </div>
-        </div>
-      </section>
-
-      {/* Difference */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">The Jeju Mornings Difference</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Feature icon="🌿" title="Calm the Noise, Not Your Drive">
-              Experience a state of calm focus that manages stress without diminishing your ambition or energy.
-            </Feature>
-            <Feature icon="🎯" title="Sharpen Focus & Mental Clarity">
-              Cut through daily brain fog. Execute your most important tasks with precision and clarity.
-            </Feature>
-            <Feature icon="🛡️" title="Build Resilience to Stress">
-              Adapt to daily pressures more effectively. Feel less reactive and more in control, day after day.
-            </Feature>
-          </div>
-        </div>
-      </section>
-
-      {/* Clean Formula */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Clean, Effective, and Nothing Else.</h2>
-          <p className="text-gray-700 mb-8">
-            Your mind deserves the best. That's why our formula is engineered for performance and peace of mind, without the unwanted side effects.
-          </p>
-          <ul className="space-y-3 text-left max-w-md mx-auto text-gray-800">
-            <li>✅ No Jitters. No Crash. Unlike caffeine and energy drinks.</li>
-            <li>✅ Non-Drowsy Formula. For clear focus throughout your day.</li>
-            <li>✅ Non-GMO. Vegan. Gluten-Free.</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Founder */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-          <img src="/founder.png" alt="Founder Dr. Dae-hyeon Rho" className="rounded-2xl shadow-md w-full" />
           <div>
-            <h2 className="text-3xl font-bold mb-4">Our Founder's Promise & Story</h2>
+            {/* 대표님의 새로운 구미 목업 이미지 경로로 변경하세요. */}
+            <img
+              src="https://storage.googleapis.com/gemini-prod/images/b48a032d-3c22-482f-8703-a4c3dfcf732f" 
+              alt="Jeju Mornings Calm Focus Gummies"
+              className="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Difference Section - 4 benefits */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Your New Daily Advantage</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">A formula designed for the modern achiever—whether you're leading a team or acing your exams.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🌊✨</div>
+              <h3 className="font-semibold text-lg text-gray-900">Find Your Calm Center</h3>
+              <p className="mt-2 text-gray-600">
+                Master your day from a place of quiet strength, managing stress without diminishing your drive.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🎯🧠</div>
+              <h3 className="font-semibold text-lg text-gray-900">Lead with Effortless Clarity</h3>
+              <p className="mt-2 text-gray-600">
+                Cut through the mental fog to execute your most important tasks with the focus you deserve.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🪨💪</div>
+              <h3 className="font-semibold text-lg text-gray-900">Build Your Resilience</h3>
+              <p className="mt-2 text-gray-600">
+                Adapt to daily pressures with grace. Feel less reactive and more in control, day after day.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">💖🧘‍♀️</div>
+              <h3 className="font-semibold text-lg text-gray-900">A Ritual for Self-Care</h3>
+              <p className="mt-2 text-gray-600">
+                A small, delicious moment to honor yourself and your mental wellness in an anxious world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Story & Promise Section */}
+      <section className="py-20 bg-green-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <img
+            src="https://placehold.co/500x500/e2e8f0/334155?text=Founder's\nPhoto" // 대표님 프로필 사진 경로로 변경하세요.
+            alt="Founder Dr. Dae-hyeon Rho"
+            className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
+          />
+          <div>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Science Meets Wisdom.</h2>
             <p className="text-gray-700 mb-4">
-              Our founder, Dr. Dae-hyeon Rho—a UIUC-trained chemist and Doctor of Korean Medicine—saw high-achievers turning to harsh stimulants or ineffective remedies.
-              He created a third way: a formula that combines the holistic wisdom of Eastern botanicals with the precision of modern science.
+              Our founder, Dr. Dae-hyeon Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
             </p>
-            <blockquote className="border-l-4 border-jeju-green pl-4 italic text-gray-900">
-              "Your trust is everything to us. We are so confident you'll feel the difference that we're offering a 100% Money-Back Guarantee.
-              If Jeju Mornings doesn't become an essential part of your wellness ritual, we will refund your entire purchase. No questions asked."
+            <blockquote className="border-l-4 border-green-700 pl-4 italic text-gray-800 bg-white p-4 rounded-r-lg">
+              "We're offering a 100% Money-Back Guarantee. If Jeju Mornings doesn't become an essential part of your wellness ritual, we will refund your entire purchase. Your trust is everything."
             </blockquote>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Community is Saying</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            What Our First Believers are Saying
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Testimonial title="My Essential for Leadership Clarity" name="Olivia Chen" role="Founder & CEO, Los Angeles, CA" />
-            <Testimonial title="Finally, Calm Without the Crash" name="Sarah K." role="Investment Banker, New York, NY" />
-            <Testimonial title="The Ultimate Tool for My Creative Flow" name="Emily R." role="Lead UX Designer, San Francisco, CA" />
-          </div>
-        </div>
-      </section>
-
-      {/* Science */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">The Science Behind the Wisdom</h2>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <h3 className="font-semibold text-lg mb-2">KSM-66® Ashwagandha</h3>
-              <p className="text-gray-700">
-                We use the most clinically studied Ashwagandha on the market. This powerful adaptogen is the gold standard for reducing the stress hormone cortisol,
-                helping your body build resilience against daily pressures.
+            <div className="border rounded-xl p-6 shadow-sm bg-white">
+              <div className="text-yellow-500 mb-2">★★★★★</div>
+              <p className="font-semibold text-gray-900">"My Essential for Leadership Clarity"</p>
+              <p className="text-gray-700 mt-4">"As a founder, I was relying on coffee but hated the anxiety. Jeju Mornings gives me a sustained, clear-headed energy that feels natural and balanced."</p>
+              <p className="text-sm text-gray-600 mt-4">
+                - Olivia C., Founder & CEO, Los Angeles, CA
               </p>
             </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2">Jeju Green Tangerine</h3>
-              <p className="text-gray-700">
-                Our unique K-Wellness ingredient. Sourced from the pristine volcanic soil of Jeju Island, it contains up to 10x more Hesperidin than ripe tangerines.
-                This potent antioxidant supports healthy circulation to the brain, fighting the effects of stress and clearing mental fog.
+            <div className="border rounded-xl p-6 shadow-sm bg-white">
+              <div className="text-yellow-500 mb-2">★★★★★</div>
+              <p className="font-semibold text-gray-900">"Actually Helps with My Anxiety"</p>
+              <p className="text-gray-700 mt-4">"Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird, just... quieter inside. It's easier to focus on my notes instead of my anxious thoughts."</p>
+              <p className="text-sm text-gray-600 mt-4">
+                - Chloe S., University Student, NYC
+              </p>
+            </div>
+            <div className="border rounded-xl p-6 shadow-sm bg-white">
+              <div className="text-yellow-500 mb-2">★★★★★</div>
+              <p className="font-semibold text-gray-900">"The Ultimate Tool for My Creative Flow"</p>
+              <p className="text-gray-700 mt-4">"As a UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work. The 'Flow State' they talk about? This is it."</p>
+              <p className="text-sm text-gray-600 mt-4">
+                - Emily R., Lead UX Designer, San Francisco, CA
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20" id="shop">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <img src="/product-hero.png" alt="Jeju Mornings Gummies" className="mx-auto mb-8 w-64 rounded-xl shadow" />
-          <h2 className="text-3xl font-bold mb-6">Ready to Find Your Flow State?</h2>
-          <a href="#" className="inline-block bg-jeju-dark text-white px-10 py-4 rounded-xl font-semibold hover:bg-black">
-            SHOP NOW
-          </a>
-        </div>
-      </section>
-
-      {/* Footer simple */}
-      <footer className="py-10 border-t">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-600">
-          <p>© {new Date().getFullYear()} Jeju Mornings. All rights reserved.</p>
-          <div className="flex gap-5">
-            <a href="#" className="hover:text-jeju-dark">Terms</a>
-            <a href="#" className="hover:text-jeju-dark">Privacy</a>
-            <a href="#" className="hover:text-jeju-dark">Contact</a>
-          </div>
-        </div>
-      </footer>
     </div>
-  )
-}
-
-function Feature({ icon, title, children }) {
-  return (
-    <div className="text-center bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
-      <div className="text-4xl mb-4">{icon}</div>
-      <h3 className="font-semibold text-lg">{title}</h3>
-      <p className="mt-2 text-gray-600">{children}</p>
-    </div>
-  )
-}
-
-function Testimonial({ title, name, role }) {
-  return (
-    <div className="border rounded-xl p-6 shadow-sm bg-white">
-      <div className="text-yellow-500 mb-2" aria-label="5 out of 5 stars">★★★★★</div>
-      <p className="font-semibold">"{title}"</p>
-      <p className="text-sm text-gray-600 mt-2">- {name}, {role}</p>
-    </div>
-  )
+  );
 }
