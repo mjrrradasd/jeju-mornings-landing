@@ -67,7 +67,7 @@ export default function JejuMorningsLandingPage() {
               "As a society, we need to be able to clearly distinguish between symptom control and true healing—and only then can we make truly informed decisions."
             </blockquote>
             <a 
-              href="[여기에_블로그_게시물_URL을_입력하세요]" 
+              href="[https://www.madinamerica.com/2025/04/behind-the-smiles-mental-health-in-south-koreas-high-pressure-society/]" 
               target="_blank" 
               rel="noopener noreferrer"
               className="font-semibold text-green-800 hover:text-green-900"
