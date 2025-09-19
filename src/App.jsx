@@ -104,7 +104,7 @@ export default function JejuMorningsLandingPage() {
           <div>
             {/* [수정됨] 제품 이미지를 public 폴더의 파일로 연결합니다. */}
             <img
-              src="/product-hero.png" 
+              src="/mockup image.png" 
               alt="Jeju Mornings Calm Focus Gummies"
               className="rounded-2xl shadow-2xl"
             />
