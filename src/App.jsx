@@ -102,8 +102,9 @@ export default function JejuMorningsLandingPage() {
             </a>
           </div>
           <div>
+            {/* [수정됨] 제품 이미지를 public 폴더의 파일로 연결합니다. */}
             <img
-              src="https://storage.googleapis.com/gemini-prod/images/b48a032d-3c22-482f-8703-a4c3dfcf732f"
+              src="/product-hero.png" 
               alt="Jeju Mornings Calm Focus Gummies"
               className="rounded-2xl shadow-2xl"
             />
@@ -225,11 +226,12 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
       
-      {/* --- NEW JEJU ISLAND SOUL SECTION --- */}
+      {/* --- JEJU ISLAND SOUL SECTION --- */}
       <section className="relative py-24 bg-gray-800 text-white">
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ backgroundImage: "url('https://placehold.co/1920x1080/2d3748/e2e8f0?text=Jeju+Landscape')", opacity: 0.2 }}
+          // [수정됨] 제주 배경 이미지를 public 폴더의 파일로 연결합니다.
+          style={{ backgroundImage: "url('/jeju-bg.jpg')", opacity: 0.2 }}
         ></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">
@@ -244,8 +246,9 @@ export default function JejuMorningsLandingPage() {
       {/* --- FOUNDER STORY SECTION --- */}
       <section className="py-20 bg-green-50">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          {/* [수정됨] 창업가 이미지를 public 폴더의 파일로 연결합니다. */}
           <img
-            src="https://placehold.co/500x500/e2e8f0/334155?text=Founder's\nPhoto"
+            src="/founder.png"
             alt="Founder Dr. Daehyun Rho"
             className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
           />
