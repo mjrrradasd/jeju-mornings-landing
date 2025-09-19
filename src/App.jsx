@@ -102,9 +102,8 @@ export default function JejuMorningsLandingPage() {
             </a>
           </div>
           <div>
-            {/* [수정됨] 제품 이미지를 public 폴더의 파일로 연결합니다. */}
             <img
-              src="/mockup image.png" 
+              src="/mockup-image.png"
               alt="Jeju Mornings Calm Focus Gummies"
               className="rounded-2xl shadow-2xl"
             />
@@ -227,17 +226,13 @@ export default function JejuMorningsLandingPage() {
       </section>
       
       {/* --- JEJU ISLAND SOUL SECTION --- */}
-      <section className="relative py-24 bg-gray-800 text-white">
-        <div
-          className="absolute inset-0 bg-cover bg-center z-0"
-          // [수정됨] 제주 배경 이미지를 public 폴더의 파일로 연결합니다.
-          style={{ backgroundImage: "url('/jeju-bg.jpg')", opacity: 0.2 }}
-        ></div>
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <section className="relative py-24 bg-jeju-bg bg-cover bg-center">
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <h2 className="text-4xl font-bold mb-6">
             Sourced from an Island of Healing Energy
           </h2>
-          <p className="text-lg text-gray-200 leading-relaxed">
+          <p className="text-lg leading-relaxed">
             We journeyed to Korea’s pristine Jeju Island, a protected UNESCO World Heritage site, to find the soul of our formula. It's a place where ancient volcanoes have gifted the soil with rare minerals, and where resilient botanicals absorb the pure, healing energy of the land. We’ve bottled this essence to bring a piece of Jeju’s restorative calm directly to you.
           </p>
         </div>
@@ -246,7 +241,6 @@ export default function JejuMorningsLandingPage() {
       {/* --- FOUNDER STORY SECTION --- */}
       <section className="py-20 bg-green-50">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* [수정됨] 창업가 이미지를 public 폴더의 파일로 연결합니다. */}
           <img
             src="/founder.png"
             alt="Founder Dr. Daehyun Rho"
@@ -310,6 +304,35 @@ export default function JejuMorningsLandingPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* --- [NEW] SHOP / FINAL CTA SECTION --- */}
+      <section id="shop" className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <img
+            src="/mockup-image.png"
+            alt="Jeju Mornings Calm Focus Gummies"
+            className="mx-auto mb-8 w-64 rounded-xl"
+          />
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">
+            Ready to Find Your Calm Focus?
+          </h2>
+          <p className="text-xl text-gray-700 mb-6">
+            Jeju Mornings: Calm Focus Gummies
+          </p>
+          <div className="text-4xl font-bold mb-6">
+             $49.00
+          </div>
+          <p className="text-gray-600 mb-8 max-w-md mx-auto">
+            🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
+          </p>
+          <a
+            href="YOUR_SHOPIFY_CHECKOUT_LINK_HERE" // 여기에 실제 Shopify 결제 링크를 넣어야 합니다!
+            className="inline-block bg-green-700 text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-green-800 transition-transform duration-300 transform hover:scale-105"
+          >
+            ADD TO CART
+          </a>
         </div>
       </section>
     </div>
