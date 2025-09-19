@@ -81,13 +81,13 @@ export default function JejuMorningsLandingPage() {
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <img
             src="https://placehold.co/500x500/e2e8f0/334155?text=Founder's\nPhoto" // 대표님 프로필 사진 경로로 변경하세요.
-            alt="Founder Dr. Dae-hyeon Rho"
+            alt="Founder Dr. Daehyun Rho"
             className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
           />
           <div>
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Science Meets Wisdom.</h2>
             <p className="text-gray-700 mb-4">
-              Our founder, Dr. Dae-hyeon Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
+              Our founder, Dr. Daehyun Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
             </p>
             <blockquote className="border-l-4 border-green-700 pl-4 italic text-gray-800 bg-white p-4 rounded-r-lg">
               "We're offering a 100% Money-Back Guarantee. If Jeju Mornings doesn't become an essential part of your wellness ritual, we will refund your entire purchase. Your trust is everything."
