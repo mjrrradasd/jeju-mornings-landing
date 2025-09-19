@@ -35,40 +35,41 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* Difference Section - 4 benefits - UPDATED */}
+      {/* Difference Section - COMPLETELY REVISED */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Your New Daily Advantage</h2>
-          {/* --- 수정된 부제 --- */}
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Holistic support for the modern woman's anxiety and focus, designed to help you thrive, not just survive.</p>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Makes Jeju Mornings Different?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Point 1: Body State over Brain Issue */}
             <div className="text-center p-6 bg-gray-50 rounded-xl">
-              <div className="text-4xl mb-4">🌊✨</div>
-              <h3 className="font-semibold text-lg text-gray-900">Find Your Calm Center</h3>
-              {/* --- 수정된 설명 --- */}
+              <div className="text-4xl mb-4">⚖️</div>
+              <h3 className="font-semibold text-lg text-gray-900">A Systemic Approach</h3>
               <p className="mt-2 text-gray-600">
-                K-wellness teaches that anxiety is a signal from your body's system, not just a problem in your mind. We help you find that balance for a state of calm strength.
+                K-wellness teaches that anxiety isn't just a brain issue, but a signal from your entire body's system. We don't offer a temporary fix; we help your body find its long-term balance.
               </p>
             </div>
+            {/* Point 2: Optimized for Women */}
             <div className="text-center p-6 bg-gray-50 rounded-xl">
-              <div className="text-4xl mb-4">🎯🧠</div>
-              <h3 className="font-semibold text-lg text-gray-900">Lead with Effortless Clarity</h3>
+              <div className="text-4xl mb-4">👩‍🔬</div>
+              <h3 className="font-semibold text-lg text-gray-900">Designed for Women</h3>
               <p className="mt-2 text-gray-600">
-                Cut through the mental fog to execute your most important tasks with the focus you deserve.
+                Created by a chemist and Korean Medicine Doctor, our formula is optimized to support the unique hormonal and systemic needs of the modern woman's demanding lifestyle.
               </p>
             </div>
+            {/* Point 3: Jeju Green Tangerine */}
             <div className="text-center p-6 bg-gray-50 rounded-xl">
-              <div className="text-4xl mb-4">🪨💪</div>
-              <h3 className="font-semibold text-lg text-gray-900">Build Your Resilience</h3>
+              <div className="text-4xl mb-4">🍊🌿</div>
+              <h3 className="font-semibold text-lg text-gray-900">The Jeju Island Secret</h3>
               <p className="mt-2 text-gray-600">
-                Adapt to daily pressures with grace. Feel less reactive and more in control, day after day.
+                Our star ingredient, the Jeju Green Tangerine, contains 10x more Hesperidin than ripe ones. This potent antioxidant is key to fighting stress and clearing mental fog.
               </p>
             </div>
+            {/* Point 4: Delicious Gummy Format */}
             <div className="text-center p-6 bg-gray-50 rounded-xl">
-              <div className="text-4xl mb-4">💖🧘‍♀️</div>
-              <h3 className="font-semibold text-lg text-gray-900">A Ritual for Self-Care</h3>
+              <div className="text-4xl mb-4">🍬</div>
+              <h3 className="font-semibold text-lg text-gray-900">A Joyful Daily Ritual</h3>
               <p className="mt-2 text-gray-600">
-                A small, delicious moment to honor yourself and your mental wellness in an anxious world.
+                No more swallowing pills. Our delicious gummies make your daily wellness routine an effortless and enjoyable moment of self-care you'll actually look forward to.
               </p>
             </div>
           </div>
