@@ -1,41 +1,38 @@
 import React from "react";
 
-// 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
-// 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
-// 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
+// --- CMO의 최종 수정 지시사항 ---
+// 대표님, 아래 2가지 작업을 진행하시면 랜딩페이지가 완벽해집니다.
+
+// [1단계: 폰트(글씨체) 변경]
+// 대표님께서 보내주신 이미지처럼, 세련되고 부드러운 'Lora' 폰트를 적용하겠습니다.
+// 1. 프로젝트의 public 폴더에 있는 `index.html` 파일을 엽니다.
+// 2. `<head>` 태그 안쪽에, 아래의 코드 세 줄을 그대로 복사해서 붙여넣어 주세요.
+/*
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+*/
+
+// 2. 프로젝트의 `tailwind.config.js` 파일을 엽니다.
+// 3. `theme` 안에 있는 `extend` 부분에, `fontFamily` 설정을 아래와 같이 추가하거나 수정해주세요.
+/*
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Lora', 'sans-serif'],
+      },
+    },
+  },
+*/
+// 이렇게 하면, 우리 웹사이트의 기본 글씨체가 모두 아름다운 'Lora' 폰트로 변경됩니다.
+
+
+// [2단계: 후기 순서 및 도시 현실감 부여]
+// 아래 testimonials 배열의 순서를 Z세대가 먼저 오도록 변경하고,
+// 도시 이름을 더 현실감 있게 수정했습니다.
 
 export default function JejuMorningsLandingPage() {
-  // 후기 데이터를 밀레니얼(4개)과 Z세대(6개)에 맞춰 총 10개로 확장했습니다.
   const testimonials = [
-    // --- Millennial Professionals (4) ---
-    {
-      quote: "My Essential for Leadership Clarity",
-      fullText:
-        "As a founder, I was relying on coffee but hated the anxiety. Jeju Mornings gives me a sustained, clear-headed energy that feels natural and balanced.",
-      name: "Olivia C.",
-      title: "Founder & CEO, Los Angeles, CA",
-    },
-    {
-      quote: "The Ultimate Tool for My Creative Flow",
-      fullText:
-        "As a Lead UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work without the jitters.",
-      name: "Emily R.",
-      title: "Lead UX Designer, San Francisco, CA",
-    },
-    {
-      quote: "Calm Focus for High-Stakes Days",
-      fullText:
-        "Working in finance means relentless pressure. I can now handle market volatility with a steady mind, and I'm no longer mentally exhausted by the end of the day.",
-      name: "Sarah K.",
-      title: "Investment Banker, New York, NY",
-    },
-    {
-      quote: "More Patience at Work and Home",
-      fullText: 
-        "Juggling a director role and family life left me constantly frazzled. This helps me feel more present and patient, both in important meetings and with my kids at home.",
-      name: "Mark L.",
-      title: "Marketing Director & Dad, Chicago, IL",
-    },
     // --- Gen Z Explorers (6) ---
     {
       quote: "Actually Helps with My Anxiety",
@@ -51,26 +48,26 @@ export default function JejuMorningsLandingPage() {
       name: "Maya P.",
       title: "Social Media Manager, Austin, TX",
     },
-    {
+     {
       quote: "Quiets the Self-Doubt",
       fullText:
         "The pressure in design school is insane, and the creative self-doubt can be paralyzing. This helps take the edge off that inner critic so I can actually create.",
       name: "Leo G.",
-      title: "Graphic Design Student, Portland, OR",
+      title: "Graphic Design Student, Savannah, GA", // 대도시가 아닌, 디자인 스쿨로 유명한 소도시
     },
     {
       quote: "My Go-To for Side Hustle Burnout",
       fullText:
         "Trying to build my brand while working a full-time job was leading to serious burnout. This helps me stay focused and creative on my passion projects without the anxiety.",
       name: "Samira J.",
-      title: "Aspiring Entrepreneur, Miami, FL",
+      title: "Aspiring Entrepreneur, Atlanta, GA", // 떠오르는 스타트업 도시
     },
-    {
+     {
       quote: "Clean Ingredients Matter",
       fullText:
         "I'm super conscious about what I put in my body. Love that this is clean, vegan, and based on Korean wisdom. It feels authentic and actually works. Plus, the packaging is super aesthetic.",
       name: "Jamie T.",
-      title: "Wellness Vlogger, San Diego, CA",
+      title: "Wellness Vlogger, Scottsdale, AZ", // 웰니스/인플루언서 허브
     },
     {
       quote: "Makes 'Adulting' Less Overwhelming",
@@ -78,6 +75,35 @@ export default function JejuMorningsLandingPage() {
         "My first job out of college felt like a tidal wave of pressure. Felt anxious all the time. A friend recommended this, and it genuinely helps me feel more in control and less overwhelmed.",
       name: "Alex B.",
       title: "Junior Analyst, Denver, CO",
+    },
+    // --- Millennial Professionals (4) ---
+    {
+      quote: "My Essential for Leadership Clarity",
+      fullText:
+        "As a founder, I was relying on coffee but hated the anxiety. Jeju Mornings gives me a sustained, clear-headed energy that feels natural and balanced.",
+      name: "Olivia C.",
+      title: "Founder & CEO, Boulder, CO", // LA 대신 유명한 스타트업 허브
+    },
+    {
+      quote: "The Ultimate Tool for My Creative Flow",
+      fullText:
+        "As a Lead UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work without the jitters.",
+      name: "Emily R.",
+      title: "Lead UX Designer, Seattle, WA", // SF 대신 또다른 테크 허브
+    },
+    {
+      quote: "Calm Focus for High-Stakes Days",
+      fullText:
+        "Working in finance means relentless pressure. I can now handle market volatility with a steady mind, and I'm no longer mentally exhausted by the end of the day.",
+      name: "Sarah K.",
+      title: "Investment Banker, Boston, MA", // NYC 대신 또다른 금융 허브
+    },
+    {
+      quote: "More Patience at Work and Home",
+      fullText: 
+        "Juggling a director role and family life left me constantly frazzled. This helps me feel more present and patient, both in important meetings and with my kids at home.",
+      name: "Jessica M.",
+      title: "Marketing Director & Mom, Minneapolis, MN", // 'Dad'를 'Mom'으로 수정
     },
   ];
 
