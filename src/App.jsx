@@ -35,7 +35,7 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* --- NEW EMPATHY SECTION --- */}
+      {/* --- EMPATHY SECTION --- */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Sound Like You? You're Not Alone.</h2>
@@ -65,12 +65,12 @@ export default function JejuMorningsLandingPage() {
                 Beyond work, you're managing the endless to-do list of life. Your brain never truly rests, and 'me-time' feels like a distant luxury.
               </p>
             </div>
-            {/* Pain Point 4: High-Achiever's Anxiety */}
+            {/* Pain Point 4: Medication Dilemma - UPDATED */}
             <div className="text-center p-6 bg-gray-50 rounded-xl">
-              <div className="text-4xl mb-4">🎭😰</div>
-              <h3 className="font-semibold text-lg text-gray-900">The High-Achiever's Anxiety</h3>
+              <div className="text-4xl mb-4">🌿🆚💊</div>
+              <h3 className="font-semibold text-lg text-gray-900">The Medication Dilemma</h3>
               <p className="mt-2 text-gray-600">
-                You project confidence, but inside you're battling imposter syndrome, fearing you're not good enough. The pressure to be perfect is exhausting.
+                You've considered prescriptions, but fear the side effects and the thought of feeling numb or dependent. You're searching for a natural, sustainable way to feel like yourself again.
               </p>
             </div>
           </div>
@@ -114,18 +114,18 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* Founder Story & Promise Section */}
+      {/* Founder Story & Promise Section - UPDATED */}
       <section className="py-20 bg-green-50">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <img
             src="https://placehold.co/500x500/e2e8f0/334155?text=Founder's\nPhoto" // 대표님 프로필 사진 경로로 변경하세요.
-            alt="Founder Dr. Dae-hyeon Rho"
+            alt="Founder Dr. Daehyun Rho"
             className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
           />
           <div>
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Science Meets Wisdom.</h2>
             <p className="text-gray-700 mb-4">
-              Our founder, Dr. Dae-hyeon Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
+              Our founder, Dr. Daehyun Rho—a UIUC-trained chemist and Doctor of Korean Medicine—created Jeju Mornings for one reason: to offer a smarter solution. He combined the data-driven precision of Western science with the holistic balance of Eastern wisdom.
             </p>
             <blockquote className="border-l-4 border-green-700 pl-4 italic text-gray-800 bg-white p-4 rounded-r-lg">
               "We're offering a 100% Money-Back Guarantee. If Jeju Mornings doesn't become an essential part of your wellness ritual, we will refund your entire purchase. Your trust is everything."
