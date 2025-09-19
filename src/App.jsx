@@ -35,23 +35,53 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* --- NEW INTRODUCTION SECTION --- */}
-      <section className="py-20 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900">Does This Sound Familiar?</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Your mind feels like it has too many tabs open. You're constantly busy, jumping from one task to another, but at the end of the day, you feel like you haven't truly accomplished anything meaningful. You're fueled by coffee, but tired of the jitters and the inevitable afternoon crash. You're not looking for another stimulant; you're looking for a way to quiet the static and find your focus again.
-          </p>
+      {/* --- NEW EMPATHY SECTION --- */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Sound Like You? You're Not Alone.</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Modern life demands everything from you. We see you, and we created this for you.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Pain Point 1: Too Many Tabs Brain */}
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🤯</div>
+              <h3 className="font-semibold text-lg text-gray-900">The "Too Many Tabs" Brain</h3>
+              <p className="mt-2 text-gray-600">
+                Your mind feels like a browser with endless tabs open. You're constantly busy, but never truly focused, leaving you feeling scattered and unproductive.
+              </p>
+            </div>
+            {/* Pain Point 2: Caffeine Rollercoaster */}
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">☕️📉</div>
+              <h3 className="font-semibold text-lg text-gray-900">The Caffeine Rollercoaster</h3>
+              <p className="mt-2 text-gray-600">
+                You rely on coffee to start, but the afternoon brings jitters and the inevitable crash. You're trapped in a cycle of artificial highs and draining lows.
+              </p>
+            </div>
+            {/* Pain Point 3: Invisible Mental Load */}
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">⚖️😩</div>
+              <h3 className="font-semibold text-lg text-gray-900">The Invisible Mental Load</h3>
+              <p className="mt-2 text-gray-600">
+                Beyond work, you're managing the endless to-do list of life. Your brain never truly rests, and 'me-time' feels like a distant luxury.
+              </p>
+            </div>
+            {/* Pain Point 4: High-Achiever's Anxiety */}
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🎭😰</div>
+              <h3 className="font-semibold text-lg text-gray-900">The High-Achiever's Anxiety</h3>
+              <p className="mt-2 text-gray-600">
+                You project confidence, but inside you're battling imposter syndrome, fearing you're not good enough. The pressure to be perfect is exhausting.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-
 
       {/* Difference Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Makes Jeju Mornings Different?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Point 1: Body State over Brain Issue */}
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">⚖️</div>
               <h3 className="font-semibold text-lg text-gray-900">A Systemic Approach</h3>
@@ -59,7 +89,6 @@ export default function JejuMorningsLandingPage() {
                 K-wellness teaches that anxiety isn't just a brain issue, but a signal from your entire body's system. We don't offer a temporary fix; we help your body find its long-term balance.
               </p>
             </div>
-            {/* Point 2: Optimized for Women - UPDATED */}
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">👩‍🔬</div>
               <h3 className="font-semibold text-lg text-gray-900">A Formula Designed for Women</h3>
@@ -67,7 +96,6 @@ export default function JejuMorningsLandingPage() {
                 Created by a chemist and Korean Medicine Doctor, our formula is optimized to support the unique systemic and hormonal needs of the modern woman's demanding lifestyle.
               </p>
             </div>
-            {/* Point 3: Jeju Green Tangerine */}
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">🍊🌿</div>
               <h3 className="font-semibold text-lg text-gray-900">The Jeju Island Secret</h3>
@@ -75,7 +103,6 @@ export default function JejuMorningsLandingPage() {
                 Our star ingredient, the Jeju Green Tangerine, contains 10x more Hesperidin than ripe ones. This potent antioxidant is key to fighting stress and clearing mental fog.
               </p>
             </div>
-            {/* Point 4: Delicious Gummy Format */}
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">🍬</div>
               <h3 className="font-semibold text-lg text-gray-900">A Joyful Daily Ritual</h3>
@@ -127,7 +154,7 @@ export default function JejuMorningsLandingPage() {
               <p className="font-semibold text-gray-900">"Actually Helps with My Anxiety"</p>
               <p className="text-gray-700 mt-4">"Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird, just... quieter inside. It's easier to focus on my notes instead of my anxious thoughts."</p>
               <p className="text-sm text-gray-600 mt-4">
-                - Chloe S., University Student, Druham, NC
+                - Chloe S., University Student, NYC
               </p>
             </div>
             <div className="border rounded-xl p-6 shadow-sm bg-white">
