@@ -1,18 +1,85 @@
 import React from "react";
 
+// 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
+// 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
+// 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
+
 export default function App() {
   const testimonials = [
-    { quote: "Actually Helps with My Anxiety", fullText: "Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird or tired, just... quieter inside. It's easier to focus on my notes.", name: "Chloe S.", title: "University Student, Austin, TX" },
-    { quote: "Makes 'Adulting' Less Overwhelming", fullText: "My first job out of college felt like a tidal wave of pressure. A friend recommended this, and it genuinely helps me feel more in control and less overwhelmed.", name: "Alex B.", title: "Junior Analyst, Denver, CO" },
-    { quote: "Helps Me Switch Off My Brain", fullText: "My job is being online 24/7. The pressure to always be creative and responsive is real. This helps me actually unwind at the end of the day without my mind racing.", name: "Maya P.", title: "Social Media Manager, Nashville, TN" },
-    { quote: "Quiets the Self-Doubt", fullText: "The pressure in design school is insane, and the creative self-doubt can be paralyzing. This helps take the edge off that inner critic so I can actually create.", name: "Leo G.", title: "Graphic Design Student, Savannah, GA" },
-    { quote: "My Go-To for Side Hustle Burnout", fullText: "Trying to build my brand while working a full-time job was leading to serious burnout. This helps me stay focused and creative on my passion projects without the anxiety.", name: "Samira J.", title: "Aspiring Entrepreneur, Atlanta, GA" },
-    { quote: "Clean Ingredients Matter", fullText: "I'm super conscious about what I put in my body. Love that this is clean, vegan, and based on Korean wisdom. It feels authentic and actually works. Plus, the packaging is super aesthetic.", name: "Jamie T.", title: "Wellness Vlogger, Scottsdale, AZ" },
-    { quote: "My Essential for Leadership Clarity", fullText: "As a founder, I was relying on coffee but hated the anxiety. Jeju Mornings gives me a sustained, clear-headed energy that feels natural and balanced.", name: "Olivia C.", title: "Founder & CEO, Boulder, CO" },
-    { quote: "The Ultimate Tool for My Creative Flow", fullText: "As a Lead UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work without the jitters.", name: "Emily R.", title: "Lead UX Designer, Portland, OR" },
-    { quote: "Calm Focus for High-Stakes Days", fullText: "Working in finance means relentless pressure. I can now handle market volatility with a steady mind, and I'm no longer mentally exhausted by the end of the day.", name: "Sarah K.", title: "Investment Banker, Boston, MA" },
-    { quote: "More Patience at Work and Home", fullText: "Juggling a director role and family life left me constantly frazzled. This helps me feel more present and patient, both in important meetings and with my kids at home.", name: "Jessica M.", title: "Marketing Director & Mom, Minneapolis, MN" },
+    // --- Gen Z Explorers (앞 순서로 배치) ---
+    {
+      quote: "Actually Helps with My Anxiety",
+      fullText:
+        "Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird or tired, just... quieter inside. It's easier to focus on my notes.",
+      name: "Chloe S.",
+      title: "University Student, Austin, TX",
+    },
+    {
+      quote: "Makes 'Adulting' Less Overwhelming",
+      fullText:
+        "My first job out of college felt like a tidal wave of pressure. A friend recommended this, and it genuinely helps me feel more in control and less overwhelmed.",
+      name: "Alex B.",
+      title: "Junior Analyst, Denver, CO",
+    },
+    {
+      quote: "Helps Me Switch Off My Brain",
+      fullText:
+        "My job is being online 24/7. The pressure to always be creative and responsive is real. This helps me actually unwind at the end of the day without my mind racing.",
+      name: "Maya P.",
+      title: "Social Media Manager, Nashville, TN",
+    },
+     {
+      quote: "Quiets the Self-Doubt",
+      fullText:
+        "The pressure in design school is insane, and the creative self-doubt can be paralyzing. This helps take the edge off that inner critic so I can actually create.",
+      name: "Leo G.",
+      title: "Graphic Design Student, Savannah, GA",
+    },
+    {
+      quote: "My Go-To for Side Hustle Burnout",
+      fullText:
+        "Trying to build my brand while working a full-time job was leading to serious burnout. This helps me stay focused and creative on my passion projects without the anxiety.",
+      name: "Samira J.",
+      title: "Aspiring Entrepreneur, Atlanta, GA",
+    },
+     {
+      quote: "Clean Ingredients Matter",
+      fullText:
+        "I'm super conscious about what I put in my body. Love that this is clean, vegan, and based on Korean wisdom. It feels authentic and actually works. Plus, the packaging is super aesthetic.",
+      name: "Jamie T.",
+      title: "Wellness Vlogger, Scottsdale, AZ",
+    },
+    // --- Millennial Professionals ---
+    {
+      quote: "My Essential for Leadership Clarity",
+      fullText:
+        "As a founder, I was relying on coffee but hated the anxiety. Jeju Mornings gives me a sustained, clear-headed energy that feels natural and balanced.",
+      name: "Olivia C.",
+      title: "Founder & CEO, Boulder, CO",
+    },
+    {
+      quote: "The Ultimate Tool for My Creative Flow",
+      fullText:
+        "As a Lead UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work without the jitters.",
+      name: "Emily R.",
+      title: "Lead UX Designer, Portland, OR",
+    },
+    {
+      quote: "Calm Focus for High-Stakes Days",
+      fullText:
+        "Working in finance means relentless pressure. I can now handle market volatility with a steady mind, and I'm no longer mentally exhausted by the end of the day.",
+      name: "Sarah K.",
+      title: "Investment Banker, Boston, MA",
+    },
+    {
+      quote: "More Patience at Work and Home",
+      fullText:
+        "Juggling a director role and family life left me constantly frazzled. This helps me feel more present and patient, both in important meetings and with my kids at home.",
+      name: "Jessica M.",
+      title: "Marketing Director & Mom, Minneapolis, MN",
+    },
   ];
+
   const handlePurchaseClick = () => { if (typeof fbq === 'function') { fbq('track', 'Purchase'); } };
 
   return (
@@ -23,10 +90,11 @@ export default function App() {
           <div>
             <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">Anxiety and Focus, All at Once.</h1>
             <p className="mt-4 text-lg text-gray-700 italic">The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.</p>
-            <a href="#shop" className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">Discover Your Calm Focus</a>
+            {/* [수정됨] 버튼 링크(href)를 '#difference'로 변경했습니다. */}
+            <a href="#difference" className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">Discover Your Calm Focus</a>
           </div>
           <div>
-            <img src="/mockup image.png" alt="Jeju Mornings Calm Focus Gummies" className="rounded-2xl shadow-2xl" />
+            <img src="/mockup-image.png" alt="Jeju Mornings Calm Focus Gummies" className="rounded-2xl shadow-2xl" />
           </div>
         </div>
       </section>
@@ -46,7 +114,8 @@ export default function App() {
       </section>
 
       {/* --- DIFFERENCE SECTION --- */}
-      <section className="py-20 bg-gray-50">
+      {/* [수정됨] 이 섹션에 id="difference"를 추가하여 앵커 링크의 목적지로 만들었습니다. */}
+      <section id="difference" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Makes Jeju Mornings Different?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -99,7 +168,7 @@ export default function App() {
       {/* --- SHOP / FINAL CTA SECTION --- */}
       <section id="shop" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <img src="/mockup image.png" alt="Jeju Mornings Calm Focus Gummies" className="mx-auto mb-8 w-64 rounded-xl" />
+          <img src="/mockup-image.png" alt="Jeju Mornings Calm Focus Gummies" className="mx-auto mb-8 w-64 rounded-xl" />
           <h2 className="text-3xl font-bold mb-2 text-gray-900">Ready to Find Your Calm Focus?</h2>
           <p className="text-xl text-gray-700 mb-6">Jeju Mornings: Calm Focus Gummies</p>
           <div className="text-4xl font-bold mb-6">$49.00</div>
