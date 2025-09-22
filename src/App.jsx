@@ -3,7 +3,6 @@ import React from "react";
 // 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
 // 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
 // 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
-// (주의: 이 코드가 정상적으로 작동하려면, 이전에 논의했던 'index.html'과 'tailwind.config.js' 파일 설정이 올바르게 되어 있어야 합니다.)
 
 export default function App() {
   const testimonials = [
@@ -13,7 +12,7 @@ export default function App() {
       fullText:
         "Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird or tired, just... quieter inside. It's easier to focus on my notes.",
       name: "Chloe S.",
-      title: "University Student, Austin, TX", // 현실감 있는 도시로 변경
+      title: "University Student, Austin, TX",
     },
     {
       quote: "Makes 'Adulting' Less Overwhelming",
@@ -27,7 +26,7 @@ export default function App() {
       fullText:
         "My job is being online 24/7. The pressure to always be creative and responsive is real. This helps me actually unwind at the end of the day without my mind racing.",
       name: "Maya P.",
-      title: "Social Media Manager, Nashville, TN", // 현실감 있는 도시로 변경
+      title: "Social Media Manager, Nashville, TN",
     },
      {
       quote: "Quiets the Self-Doubt",
@@ -63,7 +62,7 @@ export default function App() {
       fullText:
         "As a Lead UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work without the jitters.",
       name: "Emily R.",
-      title: "Lead UX Designer, Portland, OR", // 현실감 있는 도시로 변경
+      title: "Lead UX Designer, Portland, OR",
     },
     {
       quote: "Calm Focus for High-Stakes Days",
@@ -77,9 +76,17 @@ export default function App() {
       fullText:
         "Juggling a director role and family life left me constantly frazzled. This helps me feel more present and patient, both in important meetings and with my kids at home.",
       name: "Jessica M.",
-      title: "Marketing Director & Mom, Minneapolis, MN", // 'Dad'에서 'Mom'으로 수정
+      title: "Marketing Director & Mom, Minneapolis, MN",
     },
   ];
+
+  // [추가됨] 'PURCHASE' 버튼 클릭 시 메타 픽셀 'Purchase' 이벤트를 실행하는 함수
+  const handlePurchaseClick = () => {
+    // fbq 함수가 존재하는지 (픽셀이 로드되었는지) 확인 후 실행
+    if (typeof fbq === 'function') {
+      fbq('track', 'Purchase');
+    }
+  };
 
   return (
     <div className="font-sans text-gray-800 bg-white">
@@ -326,10 +333,12 @@ export default function App() {
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
             🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
           </p>
+          {/* [수정됨] onClick 이벤트 핸들러를 추가했습니다. */}
           <a
             href="https://forms.gle/nPTHbhn724xzZbCF7"
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={handlePurchaseClick}
             className="inline-block bg-green-700 text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-green-800 transition-transform duration-300 transform hover:scale-105"
           >
             PURCHASE
