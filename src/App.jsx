@@ -282,6 +282,97 @@ export default function App() {
               <div className="text-3xl mr-4">🌿</div>
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">KSM-66® Ashwagandha</h3>
-                <p className="mt-1 text-gray-600">The gold standard adaptogen. We
+                <p className="mt-1 text-gray-600">The gold standard adaptogen. We use the most clinically-studied Ashwagandha to reduce the stress hormone cortisol, and help your body build resilience against daily pressures.</p>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="text-3xl mr-4">🍊</div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900">Jeju Green Tangerine</h3>
+                <p className="mt-1 text-gray-600">Our unique K-Wellness secret. It contains 10x more Hesperidin than ripe tangerines, a key antioxidant to support healthy circulation to the brain and clear mental fog.</p>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="text-3xl mr-4">🍵</div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900">L-Theanine</h3>
+                <p className="mt-1 text-gray-600">Nature’s key to ‘wakeful relaxation.’ Found in green tea, it supports alpha brainwaves associated with a meditative state, quieting a busy mind without drowsiness.</p>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="text-3xl mr-4">🪵</div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900">Cinnamon & Licorice Root</h3>
+                <p className="mt-1 text-gray-600">(계지 & 감초) The Harmonizing Botanicals. A classic pairing in Korean wellness to improve flow and ensure all ingredients work together in perfect balance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                  
+      {/* --- UPDATED TESTIMONIALS SECTION (HORIZONTAL SCROLL) --- */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            What Our First Believers are Saying
+          </h2>
+          <div className="flex overflow-x-auto space-x-8 pb-4 scroll-snap-x-mandatory scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-full sm:w-[45%] lg:w-[30%] scroll-snap-center"
+              >
+                <div className="border rounded-xl p-8 shadow-sm bg-white h-full flex flex-col justify-between">
+                  <div>
+                    <div className="text-yellow-500 mb-4">★★★★★</div>
+                    <p className="font-semibold text-xl text-gray-900">
+                      "{testimonial.quote}"
+                    </p>
+                    <p className="text-gray-700 mt-4 text-lg">
+                      {testimonial.fullText}
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 mt-6 font-medium">
+                    - {testimonial.name}, {testimonial.title}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- SHOP / FINAL CTA SECTION --- */}
+      <section id="shop" className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <img
+            src="/mockup-image.png"
+            alt="Jeju Mornings Calm Focus Gummies"
+            className="mx-auto mb-8 w-64 rounded-xl"
+          />
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">
+            Ready to Find Your Calm Focus?
+          </h2>
+          <p className="text-xl text-gray-700 mb-6">
+            Jeju Mornings: Calm Focus Gummies
+          </p>
+          <div className="text-4xl font-bold mb-6">
+             $49.00
+          </div>
+          <p className="text-gray-600 mb-8 max-w-md mx-auto">
+            🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
+          </p>
+          <a
+            href="https://forms.gle/nPTHbhn724xzZbCF7"
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={handlePurchaseClick}
+            className="inline-block bg-green-700 text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-green-800 transition-transform duration-300 transform hover:scale-105"
+          >
+            PURCHASE
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
