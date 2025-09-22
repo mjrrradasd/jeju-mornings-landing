@@ -80,14 +80,6 @@ export default function App() {
     },
   ];
 
-  // [추가됨] 'PURCHASE' 버튼 클릭 시 메타 픽셀 'Purchase' 이벤트를 실행하는 함수
-  const handlePurchaseClick = () => {
-    // fbq 함수가 존재하는지 (픽셀이 로드되었는지) 확인 후 실행
-    if (typeof fbq === 'function') {
-      fbq('track', 'Purchase');
-    }
-  };
-
   return (
     <div className="font-sans text-gray-800 bg-white">
       {/* --- HERO SECTION --- */}
@@ -100,16 +92,17 @@ export default function App() {
             <p className="mt-4 text-lg text-gray-700 italic">
               The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.
             </p>
+            {/* [수정됨] 버튼 문구와 링크(href)를 변경했습니다. */}
             <a
-              href="#shop"
+              href="#difference"
               className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105"
             >
-              Discover Your Calm Focus
+              How It's Different
             </a>
           </div>
           <div>
             <img
-              src="/mockup image.png"
+              src="/mockup-image.png"
               alt="Jeju Mornings Calm Focus Gummies"
               className="rounded-2xl shadow-2xl"
             />
@@ -177,7 +170,8 @@ export default function App() {
       </section>
 
       {/* --- DIFFERENCE SECTION --- */}
-      <section className="py-20 bg-gray-50">
+      {/* [수정됨] 이 섹션에 id="difference"를 추가하여 앵커 링크의 목적지로 만들었습니다. */}
+      <section id="difference" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             What Makes Jeju Mornings Different?
@@ -317,7 +311,7 @@ export default function App() {
       <section id="shop" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <img
-            src="/mockup image.png"
+            src="/mockup-image.png"
             alt="Jeju Mornings Calm Focus Gummies"
             className="mx-auto mb-8 w-64 rounded-xl"
           />
@@ -333,7 +327,6 @@ export default function App() {
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
             🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
           </p>
-          {/* [수정됨] onClick 이벤트 핸들러를 추가했습니다. */}
           <a
             href="https://forms.gle/nPTHbhn724xzZbCF7"
             target="_blank" 
@@ -348,4 +341,3 @@ export default function App() {
     </div>
   );
 }
-
