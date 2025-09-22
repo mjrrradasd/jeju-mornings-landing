@@ -1,25 +1,28 @@
 import React from "react";
 
-// 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
-// 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
-// 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
-
 export default function App() {
   const testimonials = [
-    // ... (이전과 동일한 10개의 후기 데이터) ...
+    // --- Gen Z Explorers (앞 순서로 배치) ---
     {
       quote: "Actually Helps with My Anxiety",
       fullText:
         "Studying for finals is pure stress. I saw this on TikTok and decided to try. It doesn't make you feel weird or tired, just... quieter inside. It's easier to focus on my notes.",
       name: "Chloe S.",
-      title: "University Student, NYC",
+      title: "University Student, Austin, TX",
+    },
+    {
+      quote: "Makes 'Adulting' Less Overwhelming",
+      fullText:
+        "My first job out of college felt like a tidal wave of pressure. A friend recommended this, and it genuinely helps me feel more in control and less overwhelmed.",
+      name: "Alex B.",
+      title: "Junior Analyst, Denver, CO",
     },
     {
       quote: "Helps Me Switch Off My Brain",
       fullText:
         "My job is being online 24/7. The pressure to always be creative and responsive is real. This helps me actually unwind at the end of the day without my mind racing.",
       name: "Maya P.",
-      title: "Social Media Manager, Austin, TX",
+      title: "Social Media Manager, Nashville, TN",
     },
      {
       quote: "Quiets the Self-Doubt",
@@ -42,13 +45,7 @@ export default function App() {
       name: "Jamie T.",
       title: "Wellness Vlogger, Scottsdale, AZ",
     },
-    {
-      quote: "Makes 'Adulting' Less Overwhelming",
-      fullText:
-        "My first job out of college felt like a tidal wave of pressure. Felt anxious all the time. A friend recommended this, and it genuinely helps me feel more in control and less overwhelmed.",
-      name: "Alex B.",
-      title: "Junior Analyst, Denver, CO",
-    },
+    // --- Millennial Professionals ---
     {
       quote: "My Essential for Leadership Clarity",
       fullText:
@@ -61,7 +58,7 @@ export default function App() {
       fullText:
         "As a Lead UX Designer, my biggest enemy is the creative block. Jeju Mornings provides a smooth clarity that helps me enter a state of deep work without the jitters.",
       name: "Emily R.",
-      title: "Lead UX Designer, Seattle, WA",
+      title: "Lead UX Designer, Portland, OR",
     },
     {
       quote: "Calm Focus for High-Stakes Days",
@@ -85,81 +82,204 @@ export default function App() {
     <div className="font-sans text-gray-800 bg-white">
       {/* --- HERO SECTION --- */}
       <section className="relative overflow-hidden bg-gray-50">
-        {/* ... Hero Section Code ... */}
+        <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">
+              Anxiety and Focus, All at Once.
+            </h1>
+            <p className="mt-4 text-lg text-gray-700 italic">
+              The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.
+            </p>
+            <a
+              href="#difference"
+              className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105"
+            >
+              How It's Different
+            </a>
+          </div>
+          <div>
+            <img
+              src="/mockup-image.png"
+              alt="Jeju Mornings Calm Focus Gummies"
+              className="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
       </section>
 
       {/* --- EMPATHY SECTION --- */}
       <section className="py-20">
-        {/* ... Empathy Section Code ... */}
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">
+            Sounds Like You? You're Not Alone.
+          </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Modern life demands everything from you. We see you, and we created
+            this for you.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🤯</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                The "Too Many Tabs" Brain
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Your mind feels like a browser with endless tabs open. You're
+                constantly busy, but never truly focused, leaving you feeling
+                scattered and unproductive.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">☕️📉</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                The Caffeine Rollercoaster
+              </h3>
+              <p className="mt-2 text-gray-600">
+                You rely on coffee to start, but the afternoon brings jitters and
+                the inevitable crash. You're trapped in a cycle of artificial
+                highs and draining lows.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">⚖️😩</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                The Invisible Mental Load
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Beyond work, you're managing the endless to-do list of life. Your
+                brain never truly rests, and 'me-time' feels like a distant
+                luxury.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🌿🆚💊</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                The Medication Dilemma
+              </h3>
+              <p className="mt-2 text-gray-600">
+                You've considered prescriptions, but fear the side effects and
+                the thought of feeling numb or dependent. You're searching for
+                a natural, sustainable way to feel like yourself again.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* --- DIFFERENCE SECTION --- */}
-      <section className="py-20 bg-gray-50">
-        {/* ... Difference Section Code ... */}
+      <section id="difference" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            What Makes Jeju Mornings Different?
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-4xl mb-4">⚖️</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                A Systemic Approach
+              </h3>
+              <p className="mt-2 text-gray-600">
+                K-wellness teaches that anxiety isn't just a brain issue, but a
+                signal from your entire body's system. We help your body
+                find its long-term balance.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-4xl mb-4">👩‍🔬</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                A Formula Designed for Women
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Created by a chemist and Korean Medicine Doctor, our formula is
+                optimized to support the unique needs of the modern woman's
+                demanding lifestyle.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-4xl mb-4">🍊🌿</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                The Jeju Island Secret
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Our star ingredient, the Jeju Green Tangerine, contains 10x
+                more Hesperidin than ripe ones, a key to fighting stress and
+                clearing mental fog.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-4xl mb-4">🍬</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                A Joyful Daily Ritual
+              </h3>
+              <p className="mt-2 text-gray-600">
+                No more swallowing pills. Our delicious gummies make your daily
+                wellness routine an effortless and enjoyable moment of
+                self-care.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       
       {/* --- JEJU ISLAND SOUL SECTION --- */}
       <section id="jeju-story" className="relative py-24 bg-jeju-bg bg-cover bg-center">
-        {/* ... Jeju Section Code ... */}
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+          <h2 className="text-4xl font-bold mb-6">
+            Sourced from an Island of Healing Energy
+          </h2>
+          <p className="text-lg leading-relaxed">
+            We journeyed to Korea’s pristine Jeju Island, a protected UNESCO World Heritage site, to find the soul of our formula. It's a place where ancient volcanoes have gifted the soil with rare minerals, and where resilient botanicals absorb the pure, healing energy of the land. We’ve bottled this essence to bring a piece of Jeju’s restorative calm directly to you.
+          </p>
+        </div>
       </section>
 
       {/* --- FOUNDER STORY SECTION --- */}
       <section className="py-20 bg-green-50">
-        {/* ... Founder Section Code ... */}
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <img
+            src="/founder.png"
+            alt="Founder Dr. Daehyun Rho"
+            className="rounded-full shadow-lg w-64 h-64 object-cover mx-auto"
+          />
+          <div>
+            <p className="text-sm font-semibold text-green-800 mb-2">
+              AS FEATURED IN: MAD IN AMERICA
+            </p>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              Science Meets Wisdom.
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Our founder, Dr. Daehyun Rho—a UIUC-trained chemist and Doctor of
+              Korean Medicine—created Jeju Mornings not just as a product, but
+              as a response to a broken system. His work is dedicated to
+              helping people find true healing beyond temporary fixes.
+            </p>
+            <blockquote className="border-l-4 border-green-700 pl-4 italic text-gray-800 bg-white p-4 rounded-r-lg mb-6">
+              "As a society, we need to be able to clearly distinguish between
+              symptom control and true healing."
+            </blockquote>
+            <a
+              href="https://www.madinamerica.com/2025/04/behind-the-smiles-mental-health-in-south-koreas-high-pressure-society/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-green-800 hover:text-green-900"
+            >
+              Read Dr. Rho's full article on Mad in America →
+            </a>
+          </div>
+        </div>
       </section>
-
-      {/* --- [NEW] INGREDIENTS SECTION --- */}
+      
+      {/* --- INGREDIENTS SECTION --- */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             What's Inside Matters: Our Formula
           </h2>
           <div className="grid md:grid-cols-2 gap-x-10 gap-y-12">
-            {/* Ingredient 1: Ashwagandha */}
             <div className="flex items-start">
               <div className="text-3xl mr-4">🌿</div>
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">KSM-66® Ashwagandha</h3>
-                <p className="mt-1 text-gray-600">The gold standard adaptogen. We use the most clinically-studied Ashwagandha to reduce the stress hormone cortisol and help your body build resilience against daily pressures.</p>
-              </div>
-            </div>
-            {/* Ingredient 2: Jeju Green Tangerine */}
-            <div className="flex items-start">
-              <div className="text-3xl mr-4">🍊</div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">Jeju Green Tangerine</h3>
-                <p className="mt-1 text-gray-600">Our unique K-Wellness secret. It contains 10x more Hesperidin than ripe tangerines, a key antioxidant to support healthy circulation to the brain and clear mental fog.</p>
-              </div>
-            </div>
-            {/* Ingredient 3: L-Theanine */}
-            <div className="flex items-start">
-              <div className="text-3xl mr-4">🍵</div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">L-Theanine</h3>
-                <p className="mt-1 text-gray-600">Nature’s key to ‘wakeful relaxation.’ Found in green tea, it supports alpha brainwaves associated with a meditative state, quieting a busy mind without drowsiness.</p>
-              </div>
-            </div>
-            {/* Ingredient 4: Cinnamon & Licorice Root */}
-            <div className="flex items-start">
-              <div className="text-3xl mr-4">🪵</div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">Cinnamon & Licorice Root</h3>
-                <p className="mt-1 text-gray-600">(계지 & 감초) The Harmonizing Botanicals. A classic pairing in Korean wellness to improve flow and ensure all ingredients work together in perfect balance, guided by the wisdom of a healer.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- UPDATED TESTIMONIALS SECTION (HORIZONTAL SCROLL) --- */}
-      <section className="py-20 bg-gray-50">
-        {/* ... Testimonials Section Code ... */}
-      </section>
-
-      {/* --- SHOP / FINAL CTA SECTION --- */}
-      <section id="shop" className="py-24 bg-white">
-        {/* ... Shop Section Code ... */}
-      </section>
-    </div>
-  );
-}
+                <p className="mt-1 text-gray-600">The gold standard adaptogen. We
