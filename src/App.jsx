@@ -87,7 +87,7 @@ export default function JejuMorningsLandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">
-              Anxiety and Focus, All at Once.
+              Anxiety and Focus, All at Once
             </h1>
             <p className="mt-4 text-lg text-gray-700">
               This is the paradox of the modern achiever. Our K-wellness formula helps you find harmony—transforming the energy of anxiety into the power of calm, clear focus.
