@@ -7,9 +7,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lora', 'sans-serif'], // 기본 폰트를 'Lora'로 설정합니다.
+        sans: ['Lora', 'sans-serif'],
       },
+      backgroundImage: {
+        'jeju-bg': "url('/jeju-bg.jpg')",
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
