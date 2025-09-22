@@ -179,7 +179,7 @@ export default function App() {
                 A Systemic Approach
               </h3>
               <p className="mt-2 text-gray-600">
-                K-wellness teaches that anxiety isn't just a brain issue, but a
+                Korean-wellness teaches that anxiety isn't just a brain issue, but a
                 signal from your entire body's system. We help your body
                 find its long-term balance.
               </p>
@@ -289,7 +289,7 @@ export default function App() {
               <div className="text-3xl mr-4">🍊</div>
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">Jeju Green Tangerine</h3>
-                <p className="mt-1 text-gray-600">Our unique K-Wellness secret. It contains 10x more Hesperidin than ripe tangerines, a key antioxidant to support healthy circulation to the brain and clear mental fog.</p>
+                <p className="mt-1 text-gray-600">Our unique Korean-wellness secret. It contains 10x more Hesperidin than ripe tangerines, a key antioxidant to support healthy circulation to the brain and clear mental fog.</p>
               </div>
             </div>
             <div className="flex items-start">
