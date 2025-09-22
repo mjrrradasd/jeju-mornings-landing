@@ -90,7 +90,7 @@ export default function JejuMorningsLandingPage() {
               Anxiety and Focus, All at Once
             </h1>
             <p className="mt-4 text-lg text-gray-700">
-              This is the paradox of the modern achiever. Our K-wellness formula helps you find harmony—transforming the energy of anxiety into the power of calm, clear focus.
+              The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.
             </p>
             <a
               href="#shop"
