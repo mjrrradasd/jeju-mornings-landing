@@ -111,7 +111,7 @@ export default function App() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">
-            Sounds Like You? You're Not Alone.
+            Sounds Like You? THIS IS IT.
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             Modern life demands everything from you. We see you, and we created
