@@ -94,7 +94,7 @@ export default function App() {
             <a href="#difference" className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">Discover Your Calm Focus</a>
           </div>
           <div>
-            <img src="/mockup-image.png" alt="Jeju Mornings Calm Focus Gummies" className="rounded-2xl shadow-2xl" />
+            <img src="/mockup image.png" alt="Jeju Mornings Calm Focus Gummies" className="rounded-2xl shadow-2xl" />
           </div>
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function App() {
       {/* --- SHOP / FINAL CTA SECTION --- */}
       <section id="shop" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <img src="/mockup-image.png" alt="Jeju Mornings Calm Focus Gummies" className="mx-auto mb-8 w-64 rounded-xl" />
+          <img src="/mockup image.png" alt="Jeju Mornings Calm Focus Gummies" className="mx-auto mb-8 w-64 rounded-xl" />
           <h2 className="text-3xl font-bold mb-2 text-gray-900">Ready to Find Your Calm Focus?</h2>
           <p className="text-xl text-gray-700 mb-6">Jeju Mornings: Calm Focus Gummies</p>
           <div className="text-4xl font-bold mb-6">$49.00</div>
