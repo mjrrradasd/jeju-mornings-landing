@@ -4,7 +4,7 @@ import React from "react";
 // 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
 // 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
 
-export default function JejuMorningsLandingPage() {
+export default function App() {
   const testimonials = [
     // --- Gen Z Explorers (6) ---
     {
@@ -87,10 +87,12 @@ export default function JejuMorningsLandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">
-              Anxiety and Focus, All at Once
+              For Your Performance, and Your Peace of Mind.
             </h1>
             <p className="mt-4 text-lg text-gray-700">
-              The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.
+              In a world of constant noise and pressure, find the clarity to
+              achieve your goals and the calm to protect your well-being. This
+              is your daily tool for a balanced, optimal mind.
             </p>
             <a
               href="#shop"
@@ -305,7 +307,7 @@ export default function JejuMorningsLandingPage() {
         </div>
       </section>
 
-      {/* --- SHOP / FINAL CTA SECTION --- */}
+      {/* --- SHOP / FINAL CTA SECTION (UPDATED FOR GOOGLE FORM) --- */}
       <section id="shop" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <img
@@ -317,19 +319,21 @@ export default function JejuMorningsLandingPage() {
             Ready to Find Your Calm Focus?
           </h2>
           <p className="text-xl text-gray-700 mb-6">
-            Jeju Mornings: Calm Focus Gummies
+            Be the first to experience Jeju Mornings.
           </p>
           <div className="text-4xl font-bold mb-6">
-             $49.00
+             Claim Your Founder's Discount (Free)
           </div>
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
-            🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
+            🛡️ **Your Spot is Secure:** By signing up, you'll be on our exclusive pre-launch list, with a special discount reserved for you.
           </p>
           <a
-            href="YOUR_SHOPIFY_CHECKOUT_LINK_HERE" // 여기에 실제 Shopify 결제 링크를 넣어야 합니다!
+            href="https://forms.gle/nPTHbhn724xzZbCF7" // [수정됨] 대표님의 구글폼 주소를 삽입했습니다.
+            target="_blank" 
+            rel="noopener noreferrer"
             className="inline-block bg-green-700 text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-green-800 transition-transform duration-300 transform hover:scale-105"
           >
-            ADD TO CART
+            PURCHASE
           </a>
         </div>
       </section>
