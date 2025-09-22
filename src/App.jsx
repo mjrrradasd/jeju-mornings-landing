@@ -91,7 +91,7 @@ export default function App() {
             <h1 className="text-4xl font-extrabold leading-tight lg:text-5xl text-gray-900">Anxiety and Focus, All at Once.</h1>
             <p className="mt-4 text-lg text-gray-700 italic">The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.</p>
             {/* [수정됨] 버튼 링크(href)를 '#difference'로 변경했습니다. */}
-            <a href="#difference" className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">Discover Your Calm Focus</a>
+            <a href="#difference" className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">How it is Different</a>
           </div>
           <div>
             <img src="/mockup image.png" alt="Jeju Mornings Calm Focus Gummies" className="rounded-2xl shadow-2xl" />
