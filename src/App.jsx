@@ -288,7 +288,7 @@ export default function App() {
               <div className="text-3xl mr-4">🧠💖</div>
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">Longan Arillus: The Mind-Soothing Treasure</h3>
-                <p className="mt-1 text-gray-600">Known in Korean wellness as the ultimate treasure for a troubled mind, Longan is the heart of our formula. It directly addresses the modern achiever's paradox by helping to quiet the racing thoughts of anxiety while simultaneously enhancing the mental clarity needed for deep, meaningful focus.</p>
+                <p className="mt-1 text-gray-600">Known in Korean wellness as the ultimate treasure for a troubled mind, Longan is the heart of our formula. Traditionally cherished by women for its power to restore vitality and promote a radiant complexion, it directly addresses the modern achiever's paradox by helping to quiet the racing thoughts of anxiety while simultaneously enhancing the mental clarity needed for deep, meaningful focus.</p>
               </div>
             </div>
             
