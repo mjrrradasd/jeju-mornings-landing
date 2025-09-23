@@ -209,7 +209,7 @@ export default function App() {
               </p>
             </div>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-4">🍬</div>
+              <div className="text-4xl mb-4">🧪🌿</div>
               <h3 className="font-semibold text-lg text-gray-900">
                 The Best of Both Worlds
               </h3>
