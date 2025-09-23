@@ -88,7 +88,7 @@ export default function App() {
               Anxiety and Focus, All at Once.
             </h1>
             <p className="mt-4 text-lg text-gray-700 italic">
-              The Korean approach to wellness isn't about eliminating stress—it's about building a system that is resilient to it. Our formula, created by a UIUC chemist & Korean doctor, helps you master daily anxiety and brain fog to perform at your peak.
+              The Korean approach to wellness isn't about eliminating stress—it's about building a system that is resilient to it. Our formula, created by a UIUC chemist & Doctor of Korean Medicine, helps you master daily anxiety and brain fog to perform at your peak.
 
 
             </p>
