@@ -1,5 +1,9 @@
 import React from "react";
 
+// 이 컴포넌트는 Tailwind CSS가 설정된 React 프로젝트에서 바로 작동합니다.
+// 이 코드 전체를 복사하여, 대표님의 src 폴더 내 메인 파일(예: App.jsx)의
+// 기존 내용을 완전히 덮어쓰기 하시면 됩니다.
+
 export default function App() {
   const testimonials = [
     // --- Gen Z Explorers (앞 순서로 배치) ---
@@ -89,8 +93,6 @@ export default function App() {
             </h1>
             <p className="mt-4 text-lg text-gray-700 italic">
               The Korean approach to wellness isn't about eliminating stress—it's about building a system that is resilient to it. Our formula, created by a UIUC chemist & Doctor of Korean Medicine, helps you master daily anxiety and brain fog to perform at your peak.
-
-
             </p>
             <a
               href="#difference"
@@ -273,13 +275,33 @@ export default function App() {
         </div>
       </section>
       
-      {/* --- INGREDIENTS SECTION --- */}
+      {/* --- [수정됨] INGREDIENTS SECTION --- */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             What's Inside Matters: Our Formula
           </h2>
           <div className="grid md:grid-cols-2 gap-x-10 gap-y-12">
+            
+            {/* Ingredient 1: Longan Arillus (용안육) */}
+            <div className="flex items-start">
+              <div className="text-3xl mr-4">🧠💖</div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900">Longan Arillus: The Mind-Soothing Treasure</h3>
+                <p className="mt-1 text-gray-600">Known in Korean wellness as the ultimate treasure for a troubled mind, Longan is the heart of our formula. It directly addresses the modern achiever's paradox by helping to quiet the racing thoughts of anxiety while simultaneously enhancing the mental clarity needed for deep, meaningful focus.</p>
+              </div>
+            </div>
+            
+            {/* Ingredient 2: Goji Berry (구기자) */}
+            <div className="flex items-start">
+              <div className="text-3xl mr-4">🛡️✨</div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900">Goji Berry: The Resilience Shield</h3>
+                <p className="mt-1 text-gray-600">A high-performance life takes a physical toll. We included the Goji Berry, known as the 'Red Diamond,' as a powerful shield against this burnout. Its potent antioxidants help protect your body from the oxidative stress of long screen hours and demanding days.</p>
+              </div>
+            </div>
+
+            {/* Ingredient 3: KSM-66® Ashwagandha */}
             <div className="flex items-start">
               <div className="text-3xl mr-4">🌿</div>
               <div>
@@ -287,6 +309,8 @@ export default function App() {
                 <p className="mt-1 text-gray-600">The gold standard adaptogen. We use the most clinically-studied Ashwagandha to reduce the stress hormone cortisol, and help your body build resilience against daily pressures.</p>
               </div>
             </div>
+
+            {/* Ingredient 4: Jeju Green Tangerine */}
             <div className="flex items-start">
               <div className="text-3xl mr-4">🍊</div>
               <div>
@@ -294,20 +318,7 @@ export default function App() {
                 <p className="mt-1 text-gray-600">Our unique Korean-wellness secret. It contains 10x more Hesperidin than ripe tangerines, a key antioxidant to support healthy circulation to the brain and clear mental fog.</p>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className="text-3xl mr-4">🍵</div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">L-Theanine</h3>
-                <p className="mt-1 text-gray-600">Nature’s key to ‘wakeful relaxation.’ Found in green tea, it supports alpha brainwaves associated with a meditative state, quieting a busy mind without drowsiness.</p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="text-3xl mr-4">🪵</div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">Cinnamon & Licorice Root</h3>
-                <p className="mt-1 text-gray-600">(계지 & 감초) The Harmonizing Botanicals. A classic pairing in Korean wellness to improve flow and ensure all ingredients work together in perfect balance.</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -359,10 +370,10 @@ export default function App() {
             Jeju Mornings: Calm Focus Gummies
           </p>
           <div className="text-4xl font-bold mb-6">
-             $43.00 (1 month)
+             $42.99 (1 month)
           </div>
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
-            🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
+            🛡️ Try It Risk-Free: Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
           </p>
           <a
             href="https://forms.gle/nPTHbhn724xzZbCF7"
@@ -378,3 +389,4 @@ export default function App() {
     </div>
   );
 }
+
