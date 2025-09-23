@@ -214,7 +214,7 @@ export default function App() {
                 The Best of Both Worlds
               </h3>
               <p className="mt-2 text-gray-600">
-                Formulated by a UIUC chemist and Korean Medicine Doctor,
+                Formulated by a UIUC chemist and Doctor of Korean Medicine,
                 our formula unites the data-driven efficacy of the West
                 with the holistic wisdom of the East.
               </p>
