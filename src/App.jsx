@@ -211,12 +211,12 @@ export default function App() {
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
               <div className="text-4xl mb-4">🍬</div>
               <h3 className="font-semibold text-lg text-gray-900">
-                A Joyful Daily Ritual
+                The Best of Both Worlds
               </h3>
               <p className="mt-2 text-gray-600">
-                No more swallowing pills. Our delicious gummies make your daily
-                wellness routine an effortless and enjoyable moment of
-                self-care.
+                Formulated by a UIUC chemist and Korean Medicine Doctor,
+                our formula unites the data-driven efficacy of the West
+                with the holistic wisdom of the East.
               </p>
             </div>
           </div>
