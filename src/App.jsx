@@ -88,7 +88,9 @@ export default function App() {
               Anxiety and Focus, All at Once.
             </h1>
             <p className="mt-4 text-lg text-gray-700 italic">
-              The Korean approach to wellness teaches that the goal isn't to eliminate stress, but to find harmony within it. Our formula applies this wisdom to the modern mind, helping to quiet the noise of anxiety to unlock the power of calm, clear focus.
+              The Korean approach to wellness isn't about eliminating stress—it's about building a system that is resilient to it. Our formula, created by a UIUC chemist & Korean doctor, helps you master daily anxiety and brain fog to perform at your peak.
+
+
             </p>
             <a
               href="#difference"
@@ -190,7 +192,7 @@ export default function App() {
                 A Formula Designed for Women
               </h3>
               <p className="mt-2 text-gray-600">
-                Created by a chemist and Korean Medicine Doctor, our formula is
+                Created by a chemist and Doctor of Korean Medicine, our formula is
                 optimized to support the unique needs of the modern woman's
                 demanding lifestyle.
               </p>
@@ -357,7 +359,7 @@ export default function App() {
             Jeju Mornings: Calm Focus Gummies
           </p>
           <div className="text-4xl font-bold mb-6">
-             $49.00
+             $43.00 (1 month)
           </div>
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
             🛡️ **Try It Risk-Free:** Your purchase is protected by our 100% Money-Back Guarantee. If you're not satisfied, we'll refund you. No questions asked.
