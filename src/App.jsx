@@ -359,7 +359,7 @@ export default function App() {
       <section id="shop" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <img
-            src="/mockup image1-min.png.png"
+            src="/mockup image1-min.png"
             alt="Jeju Mornings Calm Focus Gummies"
             className="mx-auto mb-8 w-64 rounded-xl"
           />
